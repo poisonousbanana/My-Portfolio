@@ -11,232 +11,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
-    <style>
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* Dark theme for the page */
-body {
-  font-family: Arial, sans-serif;
-  color: #fff;
-  padding: 20px;
-}
-
-h1 {
-  font-size: 36px;
-  color: grey;
-  margin-bottom: 35px;
-}
-
-p {
-  color: grey;
-  font-size: 18px;
-  margin-bottom: 30px;
-}
-
-/* my contact info */
-
-.contact-info {
-  margin-bottom: 20px;
-}
-
-.contact-info h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.contact-info ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.contact-info li {
-  margin-bottom: 10px;
-}
-
-.contact-info li i {
-  margin-right: 10px;
-  font-size: 18px;
-  color: #007bff;
-}
-
-.contact-info li span {
-  font-size: 16px;
-  color: grey;
-}
-
-.contact-info li a {
-  text-decoration: none;
-  color: #007bff;
-}
-
-.contact-info li a:hover {
-  color: #0056b3;
-}
-
-.contact-header {
-    text-align: center;
-  }
-  .contact-header h2{
-    color:grey;
-  }
-
-  .contactinfo h1::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 50px;
-  height: 3px;
-  background-color:grey;
-}
-
-.contactinfo h1::before {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -20px;
-  width: 25px;
-  height: 3px;
-  background-color: grey;
-}
-/* form  */
-
-.contact-container {
-  max-width: 800px;
-  margin: 0 auto;
-  background-color: #2d2d2d;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Form styling */
-
-/* Form styling */
-
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px; /* Replaced margin-bottom with gap for better spacing */
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-}
-
-.input-group label {
-  font-size: 16px;
-  color: #f4f4f4;
-  margin-bottom: 5px;
-}
-
-.input-group input,
-.input-group textarea {
-  padding: 10px;
-  font-size: 16px;
-  background-color: #333;
-  border: 1px solid #444;
-  border-radius: 5px;
-  color: #fff;
-  width: 100%; /* Added width to make input fields full-width */
-}
-
-.input-group textarea {
-  resize: vertical;
-}
-
-.input-group input:focus,
-.input-group textarea:focus {
-  outline: none;
-  border-color: #007bff;
-  box-shadow: 0 0 0 2px #007bff; /* Added box-shadow for better focus effect */
-}
-
-.submit-btn {
-  padding: 15px 20px;
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.submit-btn:hover {
-  background-color: #0056b3;
-}
-
-/* Added media query for better responsiveness */
-
-@media (max-width: 768px) {
-  .contact-form {
-    gap: 15px;
-  }
-  .input-group input,
-  .input-group textarea {
-    padding: 8px;
-  }
-  .submit-btn {
-    padding: 10px 15px;
-  }
-}
-
-/* Styling for each input and textarea */
-.contact-form .form-group input,
-.contact-form .form-group textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 10px;
-    border: 1px solid #444; /* Light grey border for input fields */
-    border-radius: 8px; /* Soft corners */
-    background-color: #444; /* Dark background for inputs */
-    color: white; /* White text for inputs */
-    font-size: 16px;
-}
-
-.contact-form .form-group input::placeholder,
-.contact-form .form-group textarea::placeholder {
-    color: #bbb; /* Lighter placeholder text */
-}
-
-.contact-form .form-group input:focus,
-.contact-form .form-group textarea:focus {
-    outline: none;
-    border-color: #6666; /* Highlight border color on focus */
-    background-color: #555; /* Slightly lighter background on focus */
-}
-
-/* Button styling */
-.contact-form .btn {
-    background-color: #555; 
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 10px; /* Soft corners for the button */
-    font-size: 18px;
-    cursor: pointer;
-    width:fit-content; /* Full width button */
-    transition: background-color 0.3s ease;
-}
-
-.contact-form .btn:hover {
-    background-color: #6666; /* Darker blue on hover */
-}
-
-.contactinfo h1 {
-  position: relative;
-}
-
-
-    </style>
     
     <!-- for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -248,6 +22,29 @@ p {
 </head>
 
 <body class="p-3 mb-2 bg-dark text-white">
+
+  <!-- navbarstarted -->
+
+        <!-- Mobile & Tablet Navbar -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark d-lg-none">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">Home</a>
+    <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav w-100 justify-content-md-around text-center">        
+        <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
+        <li class="nav-item"><a class="nav-link" href="portpolio.html">Portfolio</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  
+            <!-- navbar ended -->
 
      <div class="p-3 mb-2 bg-dark text-white"> 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
@@ -304,6 +101,7 @@ p {
                 </table>
             </div>
             <div class="main">
+            <div class="contact-wrapper">
               <div class="contactinfo">
                 <h1>Get in Touch</h1>
               </div>
@@ -380,6 +178,7 @@ p {
           </div>
       </div>
   </div>
+  </div>
 </div>
 
 <script>
@@ -414,6 +213,7 @@ document.getElementById("send-message").addEventListener("click", function(event
         </div>
 
     </div>
+    <script src="navbar.js"></script>
 </body>
 
 </html>
