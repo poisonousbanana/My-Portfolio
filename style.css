@@ -641,6 +641,12 @@ body {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card a{
+  text-decoration: underline;
+  text-decoration-color: #666;
+}
+
+
 /* for smaller screens */
 /* Tablet and small desktop: 2 cards per row with reduced spacing */
 @media (max-width: 991px) {

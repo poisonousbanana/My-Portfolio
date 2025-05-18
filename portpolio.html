@@ -94,34 +94,20 @@
                 </table>
             </div>
             <div class="main">
-
-
-                <div class="loader"></div>
-
-                <p>still in progress</p>
-
-                <style>
-                .loader {
-                  border: 16px solid #f3f3f3;
-                  border-radius: 50%;
-                  border-top: 16px solid grey;
-                  width: 120px;
-                  height: 120px;
-                  animation: spin 2s linear infinite;
-                }
+                 <style>
+                        @media (min-width : 768px) {
+                            .card{
+                                height: 60%;
+                                width: 30%;
+                            }
+                        }
+                    </style>
+                <div class="card">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1116/1116453.png" alt="Weather Icon">
+                      <a href="https://weatherly360.netlify.app/"><h3> Weatherly360 </h3></a>
+                      <p>Show Weather of different location around the world</p>
+                    </div>
                 
-                @keyframes spin {
-                  0% { transform: rotate(0deg); }
-                  100% { transform: rotate(360deg); }
-                }
-                </style>
-                </div>
-            
-
-              
-            </div>
-       
-
         <script src="script.js"></script>
 
         </div>
